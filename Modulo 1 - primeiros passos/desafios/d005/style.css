@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-image: radial-gradient(to right, #127369, #10403B);
+}
+main{
+    font-family: 'Roboto', sans-serif;;
+    background-color: #8AA6A3;
+    padding: 10px;
+    margin: auto;
+    border-radius: 15px;
+    width: 23em;
+}
+h1{
+    color:#10403B;
+    text-align: center;
+}
+h2{
+    color: #127369;
+}
+p{
+    color: #4C5958;
+    text-align: justify;
+    text-indent: 2em;
+    
+}
