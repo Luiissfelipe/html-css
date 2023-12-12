@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -21,11 +22,21 @@
             padding: 5px;
         }
 
-        thead, tfoot{
-            background-color: rgba(0, 128, 0, 0.5);
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 128, 0);
         }
 
-        tbody{
+        thead, tfoot{
+            background-color: rgba(0, 128, 0);
+        }
+
+        tbody tr:nth-child(even){
+            background-color: rgba(0, 128, 0, 0.3);
+        }
+
+        tbody tr:nth-child(odd){
             background-color: rgba(0, 128, 0, 0.2);
         }
 
