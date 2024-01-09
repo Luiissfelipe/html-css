@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>
+        Exemplo de formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option selected value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option>Desenvolvedor</option>
+                <option>Contador</option>
+                <option>Vendedor</option>
+                <option>Cozinheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="5" required minlength="50" maxlength="100"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="termos" id="termos" required>
+            <label for="termos">Aceito os <a href="#">termos de uso.</a></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
