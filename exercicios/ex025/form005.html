@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            margin: 15px;
+            text-align: center;
+        }
+
+        fieldset{
+            background-color: rgb(218, 247, 218);
+            color: green;
+            border: 2px solid green;
+            margin: 15px auto;
+            padding: 10px;
+            width: 200px;
+        }
+        
+        fieldset legend{
+            font-weight: bold;
+            padding: 0px 5px;
+        }
+
+        .botoes{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="sxma" required>
+                <label for="sxma">Masculino</label><br>
+                <input type="radio" name="sexo" id="sxfe" required>
+                <label for="sxfe">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="esfut">
+                <label for="esfut">Futebol</label><br>
+                <input type="checkbox" name="esbas" id="esbas">
+                <label for="esbas">Basquete</label><br>
+                <input type="checkbox" name="esnat" id="esnat">
+                <label for="esnat">Natação</label><br>
+                <input type="checkbox" name="esten" id="esten">
+                <label for="esten">Tênis</label>
+            </p>
+        </fieldset>
+        <p class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
