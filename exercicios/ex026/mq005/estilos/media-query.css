@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    header #burger{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu ul{
+        display:flex;
+        justify-content: center;
+    }
+
+    menu a{
+        width: 100px;
+        border: 2px solid gray;
+    }
+
+    main{
+        width: 768px;
+    }
+}

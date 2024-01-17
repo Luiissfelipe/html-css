@@ -12,12 +12,11 @@ body{
 
 header{
     background-color: rgb(148, 148, 148);
-    padding-top: 10px;
 }
 
 header h1{
     text-align: center;
-    margin-bottom: 10px;
+    padding : 10px;
 }
 
 header #burger{
@@ -66,12 +65,12 @@ main{
     border-radius: 10px;
 }
 
-main h2{
+article h2{
     text-align: center;
     margin-bottom: 20px;
 }
 
-main p{
+article p{
     text-align: justify;
     text-indent: 1em;
     margin-bottom: 20px;
